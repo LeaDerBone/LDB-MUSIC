@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+  }
+  .main {
+      position: relative;
+      height: 80%;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #EF9A9A;
+  }
+  .main button {
+      padding: 10px 12px;
+      margin: 0 10px;
+  }
+  .main #logo {
+      position: absolute;
+      color: black;
+      top: 10px;
+      left: 30px;
+      font-size: 30px;
+  }
+  .main #logo span {
+      margin-right: 15px;
+  }
+
+  .right, .left{
+      position: relative;
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .left img{
+      height: 400px;
+      width: 400px;
+      border-radius: 15px;
+      box-shadow: 4px 4px 10px;
+  }
+  input[type="range"] {
+      -webkit-appearance: none ;
+      width: 50%;
+      outline: none;
+      height: 20px;
+      border-radius: 10px;
+      margin: 0 15px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none ;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: palevioletred;
+    cursor: pointer;
+  }
+  .right input[type="range"]{
+    width: 50%;
+  }
+  .left .volume{
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .left .volume p{
+      font-size: 15px;
+  }
+  .left .volume span {
+      cursor: pointer;
+      padding: 8px 10px;
+      background-color: aliceblue;
+      border-radius: 10px;
+  }
+  .left .volume span:hover {
+    opacity: 0.5;   
+  }
+  .volume #volume-show{
+      padding: 8px 13px;
+      margin: 0 8px 0 0;
+      background-color: aliceblue;
+      border-radius: 10px;
+  }
+  .right .middle{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .right .middle button{
+      border: none;
+      height: 60px;
+      width: 60px;
+      border-radius: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      outline: none;
+      transition: 0.7s;
+      background-color: aliceblue;
+  }
+  .right #title{
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-transform: capitalize;
+      font-size: 40px;
+  }
+  .right #album{
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-transform: capitalize;
+      font-size: 30px;
+  }
+  .right #artist{
+    position: absolute;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    font-size: 35px;
+    top: 200px;
+    left: 50%
+  }
+  .right .duration{
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 20px;
+      margin-top: 40px;
+  }
+  .right #auto{
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 45px;
+      border: none;
+      padding: 10px 14px;
+      outline: none;
+      background-color: aliceblue;
+      border-radius: 10px;
+      transition: 0.7s;
+  }
+  .right #auto span {
+      margin-left: 5px;
+  }
+  .right button:hover{
+      opacity: 0.5;
+  }
+  .right .show-song {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 30px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: aliceblue;
+      padding: 8px 10px;
+      border-radius: 10px;
+  }
+  .right .show-song p:nth-child(2){
+      margin: 0 2px;
+  }
